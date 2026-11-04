@@ -1,0 +1,40 @@
+# Secrets — never commit. `scripts/create_secrets.py` reads from the environment.
+.env
+.env.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Modal / run artifacts
+.modal/
+*.npy
+reports/
+workspace/
+campaign_*/
+
+# Next.js / Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env*.local
+next-env.d.ts
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# next dev regenerates this; committing it creates permanent churn
+frontend/AGENTS.md
+
+# OS noise
+.DS_Store
+Thumbs.db
